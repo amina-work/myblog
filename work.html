@@ -1,0 +1,81 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./page-icon.png">
+    <title>Mae's Work</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!--The Header Section-->
+    <header>
+        <div class="header-wrapper">
+            <div class="logo">
+                <span></span>
+                <a href="./index.html">Amina</a>
+            </div>
+            <ul class="nav">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./blogs.html">Blogs</a></li>
+                <li><a href="./work.html" class="active">Work</a></li>
+                <li><a class="contact" href="#connect">Connect</a></li>
+            </ul>
+            <button id="open__nav-btn"><i class="fa-solid fa-bars"></i></button>
+            <button id="close__nav-btn"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+    </header>
+
+    <section class="work-content container">
+        <div class="content-intro">
+            <h1>Works</h1>
+            <p>Some of the things that I've done.</p>
+        </div>
+        <span class="seperator"></span>
+        <div class="works">
+            <div class="work-item">
+                <div class="work-links">
+                    <a href="#"><i class="fa-solid fa-link" title="Website Overview"></i></a>
+                    <a href="https://github.com/amina-work/elenganza.git"><i class="fa-brands fa-github" title="Website Source Code"></i></a>
+                </div>
+                <img src="./work1.png" alt="">
+                <div class="overlay">
+                    <small>ecommerce website design</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup-img">
+            <span>&times;</span>
+            <img src="./work1.png" alt="">
+        </div>
+    </section>
+
+
+    <footer class="container" id="connect">
+        <h2>Connect</h2>
+        <ul class="socials">
+            <li><a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+            <li><a href="https://www.linkedin.com/in/amina-derdour-264056264/"><i class="fa-brands fa-linkedin"></i> Linkedin</a></li>
+            <li><a href="https://github.com/amina-work"><i class="fa-brands fa-github"></i> Github</a></li>
+            <li><a href="mailto:amina.derdour02@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a><p>amina.derdour02@gmail.com</p></li>
+        </ul>
+    </footer>
+
+    <script src="./app.js"></script>
+    
+    <script>
+        /////////////////////////////////// Work images
+        document.querySelectorAll('.works img').forEach(image =>{
+            image.onclick = () =>{
+                document.querySelector('.popup-img').style.display = 'block';
+                document.querySelector('.popup-img img').src = image.getAttribute('src');
+            }
+        })
+        document.querySelector('.popup-img span').onclick = () =>{
+            document.querySelector('.popup-img').style.display = 'none';
+        }
+
+    </script>
+</body>
+</html>

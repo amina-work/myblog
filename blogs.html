@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./page-icon.png">
+    <title>Mae's Blogs</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!--The Header Section-->
+    <header>
+        <div class="header-wrapper">
+            <div class="logo">
+                <span></span>
+                <a href="./index.html">Amina</a>
+            </div>
+            <ul class="nav">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./blogs.html" class="active">Blogs</a></li>
+                <li><a href="./work.html">Work</a></li>
+                <li><a class="contact" href="#connect">Connect</a></li>
+            </ul>
+            <button id="open__nav-btn"><i class="fa-solid fa-bars"></i></button>
+            <button id="close__nav-btn"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+    </header>
+
+    <section class="blogs-content container">
+        <div class="content-intro">
+            <h1>Blogs</h1>
+            <p>Essays, reviews, and other things that come to my mind.</p>
+        </div>
+        <span class="seperator"></span>
+        <div class="blogs">
+            <div class="blog-item" onclick="redirectToBlog()">
+                <div class="blog-date"><p>09/07/2023</p></div>
+                <div class="blog-title"><p>Hello</p></div>
+                <div class="blog-desc"><p>This is the first blog that I've written here ...</p></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="container" id="connect">
+        <h2>Connect</h2>
+        <ul class="socials">
+            <li><a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+            <li><a href="https://www.linkedin.com/in/amina-derdour-264056264/"><i class="fa-brands fa-linkedin"></i> Linkedin</a></li>
+            <li><a href="https://github.com/amina-work"><i class="fa-brands fa-github"></i> Github</a></li>
+            <li><a href="mailto:amina.derdour02@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a><p>amina.derdour02@gmail.com</p></li>
+        </ul>
+    </footer>
+
+    <script src="./app.js"></script>
+    <script>
+        function redirectToBlog() {
+            window.location.href = "./blog.html";
+        }
+    </script>
+
+</body>
+</html>
