@@ -15,6 +15,7 @@
     --clr-grey: #555555;
 }
 
+
 /* ============================ General ============================ */
 body{
     background-color: var(--clr-bg);
@@ -50,7 +51,7 @@ p{
 /* ============================ Header ============================ */
 header button {
     display: none;
-}
+}  
 header{
     position: fixed;
     top: 0;
@@ -252,10 +253,11 @@ footer .socials p{
     font-size: x-small;
 }
 .the-blog .blog-title p{
-    font-size: 2rem;
+    font-size: 1.7rem;
+    text-align: center;
     font-family: 'Noto Serif', serif;
     text-transform: capitalize;
-    font-weight: bolder;
+    font-weight: bold;
     padding-bottom: 30px;
 }
 .the-blog .blog-synopsis{
@@ -316,6 +318,21 @@ footer .socials p{
 }
 .blog-toc.open .toc-content {
     display: block;
+}
+.blog-text .book-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+.blog-text .book-img img{
+    border: 1px solid var(--clr-black);
+}
+.blog-text .book-title{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 30px;
+    gap: 10px;
 }
 
 /* ============================ Works Page ============================ */

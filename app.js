@@ -1,3 +1,15 @@
+// Toggle dark mode
+const sunMoon = document.querySelector('.sunmoon');
+const sunIcon = document.querySelector('.fa-sun');
+const moonIcon = document.querySelector('.fa-moon');
+
+sunMoon.addEventListener('click', () => {
+  document.documentElement.classList.toggle('dark-mode');
+  sunIcon.classList.toggle('hidden');
+  moonIcon.classList.toggle('hidden');
+});
+
+
 const navItems = document.querySelector('.nav');
 const openNavBtn = document.querySelector('#open__nav-btn');
 const closeNavBtn = document.querySelector('#close__nav-btn');
